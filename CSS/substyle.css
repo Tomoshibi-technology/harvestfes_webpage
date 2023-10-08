@@ -5,6 +5,35 @@ body{
     background-attachment: fixed;
 }
 
+.content_sub::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image:url('../img/IMG_8187_2.jpg');
+    background-size: cover;
+}
+
+.content_sub h4{
+    font-size: 24px;
+    -webkit-text-stroke: 1px #333;
+    /*margin-top: 16px;*/
+    margin-bottom: 16px;
+    display: flex;
+    width: 100%;
+    color: #EEE;
+    font-weight: bolder;
+    /* background-color: rgba(245, 245, 245, 0.3); */
+    /* justify-content: center;  */
+    /* border-bottom: 1px solid #333; */
+}
+
 .content_sub p{
     margin-bottom: 0;
 }

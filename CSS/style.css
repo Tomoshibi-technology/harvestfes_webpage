@@ -347,7 +347,8 @@ ul,li {
 .content .top_message{
     margin: 0 calc(50% - 50vw);
     width: 100vw;
-    padding: min(10%,70px);
+    padding: 10%;
+    /* padding: min(calc(5vw + 10%),calc(5% + 70px)); */
     background-color: rgba(245, 245, 245, 0.93);
     border-radius: 0;
     box-shadow: none;
