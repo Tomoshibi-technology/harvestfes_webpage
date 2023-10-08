@@ -22,14 +22,16 @@ body{
 
 .content_sub h4{
     font-size: 24px;
-    -webkit-text-stroke: 1px #333;
+    /* -webkit-text-stroke: 1px #333; */
     /*margin-top: 16px;*/
     margin-bottom: 16px;
     display: flex;
-    width: 100%;
-    color: #EEE;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    padding: 10%;
+    color: #737;
     font-weight: bolder;
-    /* background-color: rgba(245, 245, 245, 0.3); */
+    background-color: rgba(245, 245, 245, .93);
     /* justify-content: center;  */
     /* border-bottom: 1px solid #333; */
 }
