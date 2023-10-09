@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*content------------------------------------------------------*/
+
+.top_message ul{
+    align-items: left;
+}
+
+.top_message ul li{
+    display: block;
+    padding: 5px 5%;
+    margin-bottom: 16px;
+    text-align: left;
+    border: 0.1px solid #333;
+    min-width: 30%; 
+    color: #333;
+    /* background-color:rgba(245, 245,245, .6); */
+    border-radius: 10px;
+    line-height: 1.5em;
+}
+
+.top_message ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_message ul li a .spanimg{
+    display: block;
+    width: 32px;
+    animation:Anime_a 3.14s infinite;
+}
+
+.top_message ul li a .spanmes{
+    display: block;
+    width: calc(100% - 32px);
+}
+
+.top_message ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    /* background: #EEE; */
+    padding: 5%;
+    line-height: 2em;
+}
+
+.content div{
+    padding: min(10%,70px);
+    border-bottom: 1px solid #333;
+    background-color: rgba(245, 245, 245, 0.9);
+    margin: 50px 0;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px 4px;
+}
+
+.content .top_message{
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    padding: 10%;
+    /* padding: min(calc(5vw + 10%),calc(5% + 70px)); */
+    background-color: rgba(245, 245, 245, 0.93);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.content img{
+    width: 100%;
+}
+
+.content .date{
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    background-color: transparent;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    /* animation:Anime_c 7s infinite; */
+}
+
+.content span{
+    width: 50%;
+}
+
+.anime{
+    display: inline-block;
+    animation:Animeb 2s infinite;
+    width: 300px;
+}
+@keyframes Animeb{
+    0%{ transform: translateX(0%);  }
+    33%{ transform: translateX(5%); }
+    66%{ transform: translateX(0%); }
+}
+
+@keyframes Anime_c{
+    0%{ transform: translateY(0%);  }
+    8%{ transform: translateY(-3%); }
+    16%{ transform: translateY(0%); }
+}

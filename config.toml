@@ -1,0 +1,6 @@
+# baseURL = 'https://test-harvestfes76.tomoshibi-tech.com/'
+baseURL = 'https://harvestfes76.tomoshibi-tech.com/'
+languageCode = 'ja'
+title = '収穫祭テストHP'
+hasCJKLanguage = true
+summaryLength = 50

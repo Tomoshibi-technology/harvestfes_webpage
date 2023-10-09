@@ -1,0 +1,74 @@
+{{ partial "header.html" . }}
+<div class="top">
+    <div class="logo">
+        <div class="logo_word">
+            <div class="school_name">
+                <h2> 
+                    慶應義塾志木高等学校
+                </h2>
+            </div>
+            <div class="fesname">
+                <h1>
+                    収穫祭
+                </h1>
+            </div>
+        </div> 
+        <div class="top_date">
+            <h2>10/28 Sat ~ 10/29 Sun</h2>
+            
+        </div>   
+    </div>  
+</div>
+
+<div class="content">
+    <div class="top_message">
+        <h4 class="anime"><a href="{{.Site.BaseURL}}news">お知らせ</a></h4>
+        <ul class="news_ul">
+            <b>
+            {{ range (.Paginator 3).Pages.ByDate.Reverse}}
+                <li>  
+                    <a href="{{path.Dir .File.Dir}}{{.Slug}}">
+                        <span class="spanmes"><h6 class="blinkb">{{.Title}}</h6>{{.Date.Format "2006-01-02"}}</span>
+                        <span class="spanimg"><img src="{{.Site.BaseURL}}img/link_svg.svg" alt="＞"></span>
+                    </a>
+                </li>
+            {{ end }}
+            </b>
+        </ul>
+    </div>
+    <div class="information">
+        <h4>開催情報</h4>
+        <p>
+            <div class="date">
+                <span><h5><b>10/28 <br>Sat </b></h5> <b>9:00-16:30</b><br>
+                    展示: -16:00</span>
+                <span><h5><b>10/29 <br>Sun </b></h5> <b>9:00-18:30</b> <br>
+                    展示: -15:45<br>後夜祭: 16:00- </span>
+                    
+            </div><br>
+            食堂営業時間:&nbsp;11:00-14:00<br>
+            上記時間帯以外は休憩所として開放されます<br>
+            注意: 志木校生のみでの利用は認められません<br>
+            <br>
+            <b>入場制限なし</b><br>
+            - 入場制限なしの通常開催です <br>
+            <br>
+            <b>後夜祭はチケット制による入場制限あり</b><br>
+            - 後夜祭は29日(日)に実施。チケットは当日先着順にて配布されます。<br>
+            - 後夜祭の演目については、今後掲載します。
+        </p>
+    </div>
+    <div id="fm" class="floor_map">
+        <h4>フロアマップ（準備中）</h4>
+        <p>
+            <b>1F</b> 
+            <img src="./img/1F.png" alt="1F図">
+        </p>
+        <p>
+            <b>2F</b> 
+            <img src="./img/1F.png" alt="1F図">
+        </p>
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
