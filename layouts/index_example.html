@@ -1,0 +1,10 @@
+Use path function: {{ $filePath := path.Join }}
+<div class="infotablearea">
+    <div class="infotablearea_head">新着情報</div>
+    <div class="infotable">
+        {{ range (.Paginator 3).Pages}}
+            <a href="{{path.Dir .File.Dir}}{{.Slug}}">{{ .Title}}</a>
+            <br>aa
+        {{ end }}
+    </div>
+</div>

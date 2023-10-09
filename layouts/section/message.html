@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+<main>
+    <div class="content_sub">
+        <h4>メッセージ</h4>
+        {{ range (.Paginator 10).Pages}}
+            <div>
+                    <a href="{{.Permalink}}">
+                        <h6><b>        
+                                {{ .Title}}
+                        </b></h6>
+                        <p>
+                            {{.Date.Format "2006-01-02"}} <br>
+                                {{.Content}} 
+                                <!-- <b>...続きを読む</b> -->
+                        </p>
+                </a>
+            </div>
+        {{ end }}
+    </div>
+</main>
+{{ partial "footer.html" . }}    

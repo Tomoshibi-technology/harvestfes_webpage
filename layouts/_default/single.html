@@ -1,8 +1,15 @@
 {{ partial "header.html" . }}
-<div class="contents">
-		<div class="contents_date">{{ .Date.Format "2006.01.02" }}</div>
-		<div class="contents_title">{{ .Title }}</div>
-		<div class="contents_text">
-				{{ .Content }}
-		</div>
-</div>{{ partial "footer.html" . }}
+<main>
+    <div class="content_sub">
+            <div>
+                <h6><b>        
+                        {{ .Title}}
+                </b></h6>
+                <p>
+                    {{.Date.Format "2006-01-02"}} <br>
+                        {{.Content}}
+                </p>
+            </div>
+    </div>
+</main>
+{{ partial "footer.html" . }}     

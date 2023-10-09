@@ -1,5 +1,5 @@
-baseURL = 'https://test-harvestfes76.tomoshibi-tech.com/'
+baseURL = 'http://example.org/'
 languageCode = 'ja'
-
-[params]
-	title = 'My New Hugo Site'
+title = '収穫祭HP'
+hasCJKLanguage = true
+summaryLength = 50

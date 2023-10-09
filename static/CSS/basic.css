@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Zen+Kaku+Gothic+Antique:wght@400;900&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: "Roboto", "Zen Kaku Gothic Antique", sans-serif;
+    font-size: 16px;
+    /* background: transparent; */
+    color: #333;
+    /* background-color: rgb(245, 245, 245); */
+    background-color: #737;
+}
+
+.top::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image:url('../img/IMG_8187.jpg');
+    background-size: cover;
+}
+
+.top h1{ 
+    color:rgba(20, 20, 20, .6); 
+    font-size: min(120px, 25vw);
+    -webkit-text-stroke: 1px #EEE;
+}
+
+.top h2{
+    -webkit-text-stroke: 0.5px #EEE;
+    color:rgba(20, 20, 20, .9); 
+    /* color: rgba(245, 245, 245, .95); */
+    /* font-size: min(60px, 12vw); */
+    font-size: min(6vw,30px);
+    /* text-align: right; */
+    margin-bottom: 10px;
+}
+
+.top .top_date h2{
+    -webkit-text-stroke: 1px #333;
+    color:rgba(245, 245, 245, .95); 
+    font-size: max(32px, 6vw);
+    display: block;
+    /* padding: 0 3%;
+    border-left: 4px solid #EEE; */
+    /* background-color: rgba(20, 20, 20, .6); */
+}
+
+body h3{
+    font-size: 60px;
+}
+
+body h4{
+    font-size: 24px;
+    /*margin-top: 16px;*/
+    margin-bottom: 16px;
+    display: flex;
+    width: 100%;
+    color: #737;
+    font-weight: bolder;
+    /* justify-content: center;  */
+    /* border-bottom: 1px solid #333; */
+}
+
+body h6{
+    font-weight: 900;
+    font-size: 18px;
+}
+
+body h5{
+    font-size: 30px;
+    margin-bottom: 16px;
+    line-height: 1.2em;
+
+}
+
+body p{
+    /*margin-top: 5%;*/
+    margin-bottom:10px;
+    /* padding-left: 1em; */
+    /* text-indent: -1em; */
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+
+/*footer-----------------------------------------*/
+/* .footer{
+    
+    font-size: 10px;
+    text-align: center;
+    align-self: flex-end;
+    display: block;
+    width: 100%;
+    background-color:rgb(192, 6, 229);;
+    
+    background-color: #EEE;
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    bottom: 0;
+    text-align: center; 
+} */
+/*© 2023 収穫祭実行委員PCパート*/
+
+
+/*
+.header_links ul{/*最後に記載されているものulが要素でdisplay:flexでいじるのはその子要素
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_links ul li{
+    text-align: center;
+    border-right: 1px solid #333;
+    min-width: 30%;
+    
+}
+.header_links ul li:first-child{
+    text-align: center;
+    border-right: 1px solid #333;
+    min-width: 10%;
+}
+
+.header_links{
+    /*background-color: rgb(243, 243, 185);
+    background-color: #E8E8E8;
+    border-bottom: 1px solid #333;
+    padding: 0;
+}
+
+.header_links ul li:first-child{
+    border-left: 1px solid #333;
+}
+
+.header_links ul li a{
+    display: block;
+    color: #333;
+    font-weight: 900;
+    font-size: min(12px, 2vw);
+}
+
+.header_links img{
+    width: 20px;
+}
+
+*/
+
