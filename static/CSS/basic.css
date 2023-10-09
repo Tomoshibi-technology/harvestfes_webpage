@@ -50,7 +50,7 @@ body{
 .top .top_date h2{
     -webkit-text-stroke: 1px #333;
     color:rgba(245, 245, 245, .95); 
-    font-size: max(32px, 6vw);
+    font-size:min(60px, max(32px, 6vw));
     display: block;
     /* padding: 0 3%;
     border-left: 4px solid #EEE; */
