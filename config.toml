@@ -1,4 +1,4 @@
-baseURL = 'test-harvestfes76.tomoshibi-tech.com/'
+baseURL = 'https://test-harvestfes76.tomoshibi-tech.com/'
 languageCode = 'ja'
 
 [params]
