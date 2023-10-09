@@ -31,7 +31,7 @@ jobs:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-          LOCAL_DIR: ./public
+          LOCAL_DIR: ./public/
           REMOTE_DIR: tomoshibi-tech.com/public_html/test-harvestfes76.tomoshibi-tech.com/
           ARGS: --delete --parallel=10	# ARGSでparallelを設定する
           
