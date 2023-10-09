@@ -1,3 +1,5 @@
 baseURL = 'test-harvestfes76.tomoshibi-tech.com/'
 languageCode = 'ja'
-title = 'My New Hugo Site'
+
+[params]
+	title = 'My New Hugo Site'
