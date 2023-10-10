@@ -6,7 +6,7 @@
 		{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
 			<!-- テストサイトのURLだった場合(クローラ回避含む) -->
 			<meta name="robots" content="noindex">
-			<!-- Google tag (gtag.js) -->
+			<!-- Google tag (gtag.js) テスト用 -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3D6HT59QG"></script>
 			<script>
 				window.dataLayer = window.dataLayer || [];
@@ -17,7 +17,7 @@
 			</script>
 		{{else}}
 			<!-- 本番サイトのURLだった場合 -->
-			<!-- Google tag (gtag.js) -->
+			<!-- Google tag (gtag.js) 本番用  -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZXV369930"></script>
 			<script>
 				window.dataLayer = window.dataLayer || [];
@@ -31,7 +31,12 @@
 		<!-- 大事なところ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{.Slug}}</title>
+    <title>
+			{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
+				テスト-
+			{{end}}
+			{{.Slug}}
+		</title>
     <meta name="discription" content="慶應義塾志木高等学校第76回収穫祭ホームページへようこそ">
     <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/basic.css">
     <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/reset.css">
