@@ -3,8 +3,7 @@ name: test-deploy to remote
 on:
   push:
     branches:
-      - test/*
-      - develop/*
+      - test*
       - develop*
 jobs:
   FTP-Deploy-Action:
