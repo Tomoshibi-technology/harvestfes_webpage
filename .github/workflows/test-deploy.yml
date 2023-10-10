@@ -3,7 +3,8 @@ name: test-deploy to remote
 on:
   push:
     branches:
-      - test
+      - test/*
+      - develop/*
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -23,7 +24,7 @@ jobs:
           hugo-version: '0.101.0'
 
       - name: Build
-        run: hugo
+        run: hugo -b='https://test-harvestfes76.tomoshibi-tech.com/'
 
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
