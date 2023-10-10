@@ -71,11 +71,14 @@
                 </div>
                 <div class="nav-items">
                     <ul class="nav__items">
-                            <li class="nav-items__item"><a href="{{.Site.BaseURL}}news"><b>お知らせ</b></a></li>
-                            <li class="nav-items__item"><a href="{{.Site.BaseURL}}#fm"><b>フロアマップ</b></a></li>
-                            <li class="nav-items__item"><a href="{{.Site.BaseURL}}groups"><b>展示団体</b></a></li>
-                            <li class="nav-items__item"><a href="{{.Site.BaseURL}}stage"><b>ステージ演目</b></a></li>
-                            <li class="nav-items__item"><a href="{{.Site.BaseURL}}message"><b>収穫祭に寄せて</b></a></li>
+												{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
+														<li class="nav-items__item"><a href="{{.Site.BaseURL}}"><b>ここはテストサイトです</b></a></li>
+												{{end}}
+												<li class="nav-items__item"><a href="{{.Site.BaseURL}}news"><b>お知らせ</b></a></li>
+												<li class="nav-items__item"><a href="{{.Site.BaseURL}}#fm"><b>フロアマップ</b></a></li>
+												<li class="nav-items__item"><a href="{{.Site.BaseURL}}groups"><b>展示団体</b></a></li>
+												<li class="nav-items__item"><a href="{{.Site.BaseURL}}stage"><b>ステージ演目</b></a></li>
+												<li class="nav-items__item"><a href="{{.Site.BaseURL}}message"><b>収穫祭に寄せて</b></a></li>
                     </ul>
                     <div class="copyright">
                         © 2023 収穫祭実行委員会PCパート
