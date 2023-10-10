@@ -27,14 +27,20 @@
     <div class="top_message">
         <h4 class="anime"><a href="{{.Site.BaseURL}}news">お知らせ</a></h4>
         <ul class="news_ul">
+            {{$num:= 4}}
             <b>
-            {{ range (.Paginator 3).Pages.ByDate.Reverse}}
-                <li>  
-                    <a href="{{path.Dir .File.Dir}}{{.Slug}}">
-                        <span class="spanmes"><h6 class="blinkb">{{.Title}}</h6>{{.Date.Format "2006-01-02"}}</span>
-                        <span class="spanimg"><img src="{{.Site.BaseURL}}img/link_svg.svg" alt="＞"></span>
-                    </a>
-                </li>
+            {{ range first $num .Site.Pages.ByLastmod.Reverse}}
+                {{$f:= path.Dir .File.Dir}}
+                {{if eq $f "news" }}
+                    <li> 
+                        <a href="{{.Permalink}}">
+                            <span class="spanmes"><h6 class="blinkb">{{.Title}}</h6>{{.Date.Format "2006-01-02"}}</span>
+                            <span class="spanimg"><img src="{{.Site.BaseURL}}img/link_svg.svg" alt="＞"></span>
+                        </a>
+                    </li>
+                {{ else }}
+
+                {{ end }}
             {{ end }}
             </b>
         </ul>
