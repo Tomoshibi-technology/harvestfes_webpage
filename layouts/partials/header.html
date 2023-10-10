@@ -4,8 +4,17 @@
 <head>
 		<!-- SEO -->
 		{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
-			<!-- テストサイトのURLだった場合 -->
+			<!-- テストサイトのURLだった場合(クローラ回避含む) -->
 			<meta name="robots" content="noindex">
+			<!-- Google tag (gtag.js) -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3D6HT59QG"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'G-P3D6HT59QG');
+			</script>
 		{{else}}
 			<!-- 本番サイトのURLだった場合 -->
 			<!-- Google tag (gtag.js) -->
