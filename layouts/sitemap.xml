@@ -4,7 +4,7 @@
 		<!-- testサイトではサイトマップいらない -->
 	{{else}}
 		{{range .Data.Pages}}
-			{{ if (or (in .Permalink "/tags/") (in .Permalink "/categories/")) (in .Permalink "/blog/")}}
+			{{ if (or (in .Permalink "/tags/") (in .Permalink "/categories/")) }}
 				<url>
 					<loc>{{ .Permalink }}</loc>
 					{{ if not .Lastmod.IsZero }}
