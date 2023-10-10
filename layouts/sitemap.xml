@@ -1,5 +1,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
+	{{else}}
 	{{ range .Data.Pages }}
 	<url>
 		<loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
@@ -8,4 +10,5 @@
 		<priority>{{ .Sitemap.Priority }}</priority>{{ end }}
 	</url>
 	{{ end }}
+	{{end}}
 </urlset>
