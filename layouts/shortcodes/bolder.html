@@ -1,0 +1,5 @@
+{{ if .IsNamedParams }}
+<h6><b>{{ if .Get "text"}}{{ .Get "text" }}{{ else }}{{ end }}</b></h6>
+{{ else }}
+<b>{{ .Get 0 }}</a>
+{{ end }}
