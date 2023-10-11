@@ -2,7 +2,7 @@
 <main>
     <div class="content_sub">
         <h4>お知らせ</h4>
-        {{ range (.Paginator 2).Pages.ByDate.Reverse}}
+        {{ range (.Paginator 5).Pages.ByDate.Reverse}}
             <div>
                     <a href="{{.Permalink}}">
                         <h6><b>        
