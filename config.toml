@@ -20,4 +20,6 @@ enableRobotsTXT = true
 			notAlternative = "true"
 			permalinkable = "true"
 	[outputs]
+		# 多分サイトマップいらないが一応ね。
+		#	home = ["HTML","MANIFEST"]
 		home = ["HTML","MANIFEST","SITEMAP"]
