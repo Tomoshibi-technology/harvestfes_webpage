@@ -19,7 +19,13 @@ enableRobotsTXT = true
 			path = "favicons/"
 			notAlternative = "true"
 			permalinkable = "true"
+		[outputFormats.browserconfig]
+			name = "browserconfig"
+			baseName = "browserconfig"
+			mediaType = "application/xml"
+			path = "/"
+			notAlternative = "true"
+			permalinkable = "true"
 	[outputs]
-		# 多分サイトマップいらないが一応ね。
-		#	home = ["HTML","MANIFEST"]
-		home = ["HTML","MANIFEST","SITEMAP"]
+		home = ["HTML","MANIFEST","browserconfig"]
+		# home = ["HTML","MANIFEST","SITEMAP"]
