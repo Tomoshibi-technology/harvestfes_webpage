@@ -1,11 +1,18 @@
+.wrapper{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
 .footer{
     background-color: #EEE;
     /* padding: 5%; */
-    position: fixed;
-    z-index: 9999999;
+    position: absolute;
     bottom: 0;
+    z-index: 9999999;
     width: 100vw;
-    height: 40px;
+    height: 60px;
     /* display: block;
     justify-content: center;
     align-items: center;
@@ -32,5 +39,5 @@
 
 .sns_link img{
     /* position: fixed; */
-    width: 16px;
+    width: 30px;
 }
