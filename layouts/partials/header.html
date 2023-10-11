@@ -44,6 +44,7 @@
 		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/top.css">
 		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/content.css">
 		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/substyle.css">
+		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/footer.css">
 
 		<!-- OGP -->
 		<meta property="og:type" content="{{if.IsHome}}website{{else}}article{{end}}">
@@ -58,6 +59,8 @@
 		<!-- favicon -->
 		{{ partial "favicon.html" . }}
 </head>
+
+
 
 <body>
 		<header class="header">
@@ -97,3 +100,4 @@
 				</div>
 				
 		</header>
+		<div class="wrapper">
