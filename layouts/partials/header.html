@@ -29,21 +29,21 @@
 		{{end}}
 
 		<!-- 大事なところ -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
 			{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
 				テスト-
 			{{end}}
 			{{.Slug}}
 		</title>
-    <meta name="description" content="慶應義塾志木高等学校第76回収穫祭ホームページへようこそ">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/basic.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/reset.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/header.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/top.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/content.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/substyle.css">
+		<meta name="description" content="慶應義塾志木高等学校第76回収穫祭ホームページへようこそ">
+		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/basic.css">
+		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/reset.css">
+		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/header.css">
+		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/top.css">
+		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/content.css">
+		<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/substyle.css">
 
 		<!-- OGP -->
 		<meta property="og:type" content="{{if.IsHome}}website{{else}}article{{end}}">
@@ -56,26 +56,24 @@
 		<meta name="twitter:card" content="summary">
 
 		<!-- favicon -->
-		<link rel="icon" href="{{.Site.BaseURL}}img/favicon.ico" >
-		<link rel="apple-touch-icon" href="{{.Site.BaseURL}}img/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="{{.Site.BaseURL}}img/icon-192x192.png">
+		{{ partial "favicon.html" . }}
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__inner">
-            <div class="header__title header-title">
-                <a href="{{.Site.BaseURL}}">
-                    <img src="{{.Site.BaseURL}}img/logo.png" alt="ロゴ画像">
-                </a>
-            </div>
-    
-            <nav class="header__nav nav" id="js-nav">
-                <div class="tomain">
-                    <b>＜ メインページへ</b>
-                </div>
-                <div class="nav-items">
-                    <ul class="nav__items">
+		<header class="header">
+				<div class="header__inner">
+						<div class="header__title header-title">
+								<a href="{{.Site.BaseURL}}">
+										<img src="{{.Site.BaseURL}}img/logo.png" alt="ロゴ画像">
+								</a>
+						</div>
+
+						<nav class="header__nav nav" id="js-nav">
+								<div class="tomain">
+										<b>＜ メインページへ</b>
+								</div>
+								<div class="nav-items">
+										<ul class="nav__items">
 												{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
 														<li class="nav-items__item"><a href="{{.Site.BaseURL}}"><b>ここはテストサイトです</b></a></li>
 												{{end}}
@@ -84,18 +82,18 @@
 												<li class="nav-items__item"><a href="{{.Site.BaseURL}}groups"><b>展示団体</b></a></li>
 												<li class="nav-items__item"><a href="{{.Site.BaseURL}}stage"><b>ステージ演目</b></a></li>
 												<li class="nav-items__item"><a href="{{.Site.BaseURL}}message"><b>収穫祭に寄せて</b></a></li>
-                    </ul>
-                    <div class="copyright">
-                        © 2023 収穫祭実行委員会PCパート
-                    </div>
-                </div>
-            </nav>
-            
-            <button class="header__hamburger hamburger" id="js-hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        
-    </header>
+										</ul>
+										<div class="copyright">
+												© 2023 収穫祭実行委員会PCパート
+										</div>
+								</div>
+						</nav>
+						
+						<button class="header__hamburger hamburger" id="js-hamburger">
+								<span></span>
+								<span></span>
+								<span></span>
+						</button>
+				</div>
+				
+		</header>
