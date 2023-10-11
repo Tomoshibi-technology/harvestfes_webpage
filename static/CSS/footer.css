@@ -1,0 +1,43 @@
+.wrapper{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+.footer{
+    background-color: #EEE;
+    /* padding: 5%; */
+    position: absolute;
+    bottom: 0;
+    z-index: 9999999;
+    width: 100vw;
+    height: 60px;
+    /* display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    /* margin: 0 auto; */
+}
+.sns{
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    width: inherit;
+    height: inherit;
+    /* position: fixed; */
+}
+
+.sns_link{
+    display: block;
+    width: inherit;
+    /* height: inherit; */
+    /* justify-content: center;  */
+}
+
+.sns_link img{
+    /* position: fixed; */
+    width: 30px;
+}

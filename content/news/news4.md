@@ -1,5 +1,5 @@
 ---
-title: "収穫祭に寄せての掲載を再開しました"
+title: "収穫祭に寄せてを掲載しました"
 date: "2023-10-10"
 draft: false
 file: "news"
