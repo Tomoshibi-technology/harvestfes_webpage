@@ -102,3 +102,26 @@
     8%{ transform: translateY(-3%); }
     16%{ transform: translateY(0%); }
 }
+
+
+.top_message .att{
+    padding: 0;
+    border-bottom: none;
+    background-color: transparent;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 0.1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    width: inherit;
+    height: inherit;
+    padding: 0 5%;
+}
+
+.top_message .att .att_words{
+    width: inherit;
+    background-color: inherit;
+    text-align: left;
+}

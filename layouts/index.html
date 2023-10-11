@@ -25,8 +25,18 @@
 
 <div class="content">
     <div class="top_message">
-        <h4 class="anime"><a href="{{.Site.BaseURL}}news">お知らせ</a></h4>
+        <h4 class="anime"><a href="{{.Site.BaseURL}}news">お知らせ</a></h4><br>
         <ul class="news_ul">
+            <span class="att">
+                <span class="att_words">
+                    <b>このホームページについて</b><br>
+                    ・内容は順次追記していきます。<br>
+                    ・フロアマップ、企画一覧、ステージ演目は10/20以降に掲載します。<br>
+                    ・開催情報はスクロールして頂くことでご覧いただけます。<br>
+                    ・ご質問がございましたらharvestfes.76@gmail.comまでご連絡ください。
+
+                </span>
+            </span>
             {{$num:= 4}}
             <b>
             {{ range first $num .Site.Pages.ByLastmod.Reverse}}
@@ -50,33 +60,38 @@
         <p>
             <div class="date">
                 <span><h5><b>10/28 <br>Sat </b></h5> <b>9:00-16:30</b><br>
-                    展示: -16:00</span>
+                    展示:&nbsp;9:00-16:00</span>
                 <span><h5><b>10/29 <br>Sun </b></h5> <b>9:00-18:30</b> <br>
-                    展示: -15:45<br>後夜祭: 16:00- </span>
+                    展示:&nbsp;9:00-15:45<br>後夜祭:&nbsp;16:00-18:30 </span>
                     
             </div><br>
-            食堂営業時間:&nbsp;11:00-14:00<br>
-            上記時間帯以外は休憩所として開放されます<br>
-            注意: 志木校生のみでの利用は認められません<br>
+            開催地:&nbsp;慶應義塾志木高等学校<br>
+            アクセス:&nbsp;東武東上線志木駅から徒歩7分<br>
             <br>
             <b>入場制限なし</b><br>
             - 入場制限なしの通常開催です。 <br>
             - 状況により変更となる可能性がございます。変更があり次第「お知らせ」及び各種SNSに掲載します。<br>
             <br>
-            <b>後夜祭はチケット制による入場制限あり</b><br>
-            - 後夜祭は29日(日)に実施。チケットは当日先着順にて配布されます。<br>
-            - チケット配布方法については今後掲載します。
+            <b>後夜祭入場には事前予約が必要です</b><br>
+            - 後夜祭は29日(日)に実施。後夜祭の入場には事前予約が必要となります。<br>
+            - 事前予約はまだ受付を開始しておりません。詳細は後日ホームページに記載します。<br>
+            <br>
+            <b>食事について</b><br>
+            - 食堂が11:00-14:00の間営業いたします。<br>
+            - 上記時間帯以外は休憩所として開放されます。<br>
+            - 注意: 志木校生のみでの利用は認められません。<br>
+            <br>
         </p>
     </div>
     <div id="fm" class="floor_map">
-        <h4>フロアマップ（準備中）</h4>
+        <h4>フロアマップ　準備中</h4>
         <p>
-            <b>1F</b> 
+            <b>1F</b> &nbsp;イメージ図
             <img src="./img/1F.png" alt="1F図">
         </p>
         <p>
-            <b>2F</b> 
-            <img src="./img/1F.png" alt="1F図">
+            <b>2F</b> &nbsp;イメージ図
+            <img src="./img/1F.png" alt="2F図">
         </p>
     </div>
 </div>
