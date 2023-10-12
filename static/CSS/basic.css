@@ -92,8 +92,9 @@ body p{
     /* text-indent: -1em; */
 }
 
-a{
-    text-decoration: none;
+html body .underline{
+    text-decoration: underline;
+    color: rgb(61, 11, 186);
 }
 
 ul,li {

@@ -1,5 +1,5 @@
 ---
-title: "お知らせのタイトルを入れる"
+title: "タイトルを入れる"
 date: "{{ now.Format "2006-01-02" }}"
 draft: false
 file: "{{path.Dir .File.Dir}}"
