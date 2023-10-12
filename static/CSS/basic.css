@@ -95,6 +95,7 @@ body p{
 html body .underline{
     text-decoration: underline;
     color: rgb(61, 11, 186);
+    font-size: 16px;
 }
 
 ul,li {
