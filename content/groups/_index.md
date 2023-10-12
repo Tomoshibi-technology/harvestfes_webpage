@@ -1,7 +1,7 @@
 ---
-title: "お知らせのタイトルを入れる"
+title: 企画一覧"
 date: "2023-10-09"
 draft: false
-slug: "URL/以下を記入"
+slug: "groups"
 ---
 

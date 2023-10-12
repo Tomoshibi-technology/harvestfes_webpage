@@ -1,7 +1,7 @@
 ---
-title: "お知らせのタイトルを入れる"
+title: "ステージ演目"
 date: "2023-10-09"
 draft: false
-slug: "URL/以下を記入"
+slug: "stage"
 ---
 
