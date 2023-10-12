@@ -23,7 +23,7 @@ jobs:
           hugo-version: '0.101.0'
 
       - name: Build
-        run: hugo
+        run: hugo --minify
         
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
