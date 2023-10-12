@@ -2,111 +2,109 @@
 <html lang="ja">
 
 <head>
-		<!-- SEO -->
+	<!-- SEO -->
+	{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
+		<!-- テストサイトのURLだった場合(クローラ回避含む) -->
+		<meta name="robots" content="noindex">
+		<!-- Google tag (gtag.js) テスト用 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3D6HT59QG"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-P3D6HT59QG');
+		</script>
+	{{else}}
+		<!-- 本番サイトのURLだった場合 -->
+		<!-- Google tag (gtag.js) 本番用  -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZXV369930"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-LZXV369930');
+		</script>
+	{{end}}
+
+	<!-- 大事なところ -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
 		{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
-			<!-- テストサイトのURLだった場合(クローラ回避含む) -->
-			<meta name="robots" content="noindex">
-			<!-- Google tag (gtag.js) テスト用 -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3D6HT59QG"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-
-				gtag('config', 'G-P3D6HT59QG');
-			</script>
-		{{else}}
-			<!-- 本番サイトのURLだった場合 -->
-			<!-- Google tag (gtag.js) 本番用  -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZXV369930"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-			
-				gtag('config', 'G-LZXV369930');
-			</script>
+			テスト-
 		{{end}}
+		{{.Title}}-慶應志木収穫祭2023
+	</title>
+	
+	<meta name="description" content="{{.Title}}ページへようこそ。慶應志木高校 第76回収穫祭ホームページのコンテンツです。">
 
-		<!-- 大事なところ -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
-				テスト-
-			{{end}}
-			{{.Title}}-慶應志木収穫祭
-		</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/basic.css">
+	<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/reset.css">
+	<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/header.css">
+	<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/top.css">
+	<link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/content.css">
+	<link rel="stylesheet" href="{{.Site.BaseURL}}CSS/substyle.css">
+	<link rel="stylesheet" href="{{.Site.BaseURL}}CSS/footer.css">
 
-    <meta name="description" content="{{.Title}}ページへようこそ。慶應志木高校 第76回収穫祭ホームページのコンテンツです。">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/basic.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/reset.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/header.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/top.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/CSS/content.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}CSS/substyle.css">
-	  <link rel="stylesheet" href="{{.Site.BaseURL}}CSS/footer.css">
+	<!-- OGP -->
+	<meta property="og:type" content="{{if.IsHome}}website{{else}}article{{end}}">
+	<meta property="og:title" content="{{.Title}}">
+	<meta property="og:description" content="{{.Title}}ページへようこそ。慶應志木高校 第76回収穫祭ホームページのコンテンツです。">
+	<meta property="og:url" content="{{.Permalink}}">
+	<meta property="og:site_name" content="第76回収穫祭ホームページ">
+	<meta property="og:image" content="{{.Site.BaseURL}}img/ogp_logo.png">
 
+	<meta name="twitter:card" content="summary">
 
-
-		<!-- OGP -->
-		<meta property="og:type" content="{{if.IsHome}}website{{else}}article{{end}}">
-		<meta property="og:title" content="{{.Title}}">
-		<meta property="og:description" content="{{.Title}}ページへようこそ。慶應志木高校 第76回収穫祭ホームページのコンテンツです。">
-		<meta property="og:url" content="{{.Permalink}}">
-		<meta property="og:site_name" content="第76回収穫祭ホームページ">
-		<meta property="og:image" content="{{.Site.BaseURL}}img/ogp_logo.png">
-
-		<meta name="twitter:card" content="summary">
-
-		<!-- favicon -->
-		{{ partial "favicon.html" . }}
-		<meta name="application-name" content="{{.Title}}"/>
+	<!-- favicon -->
+	{{ partial "favicon.html" . }}
+	<meta name="application-name" content="{{.Title}}"/>
 </head>
 
 
 
 <body>
-		<header class="header">
-				<div class="header__inner">
-						<div class="header__title header-title">
-								<a href="{{.Site.BaseURL}}">
-										<img src="{{.Site.BaseURL}}img/logo.png" alt="ロゴ画像">
-								</a>
-						</div>
+	<header class="header">
+		<div class="header__inner">
+			<div class="header__title header-title">
+				<a href="{{.Site.BaseURL}}">
+					<img src="{{.Site.BaseURL}}img/logo.png" alt="ロゴ画像">
+				</a>
+			</div>
 
-						<nav class="header__nav nav" id="js-nav">
-								<div class="tomain">
-										<b>＜ メインページへ</b>
-								</div>
-								<div class="nav-items">
-										<ul class="nav__items">
-												{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
-														<li class="nav-items__item"><a href="{{.Site.BaseURL}}"><b>ここはテストサイトです</b></a></li>
-												{{end}}
-												<li class="nav-items__item"><a href="{{.Site.BaseURL}}news"><b>お知らせ</b></a></li>
-												<li class="nav-items__item"><a href="{{.Site.BaseURL}}#fm"><b>フロアマップ</b></a></li>
-												<li class="nav-items__item"><a href="{{.Site.BaseURL}}groups"><b>企画一覧</b></a></li>
-												<li class="nav-items__item"><a href="{{.Site.BaseURL}}stage"><b>ステージ演目</b></a></li>
-												<li class="nav-items__item"><a href="{{.Site.BaseURL}}message"><b>収穫祭に寄せて</b></a></li>
-
-										</ul>
-										<div class="copyright">
-												<!-- <b>お問い合わせ: &nbsp;harvestfes.76@gmail.com</b> <br><br> -->
-												<a class="underline" href="https://forms.gle/tAUbZYvHmJhSbQxL8" target="_blank"><b>お問い合わせフォーム</b></a> <br><br>
-												© 2023 収穫祭実行委員会PCパート
-										</div>
-								</div>
-						</nav>
-						
-						<button class="header__hamburger hamburger" id="js-hamburger">
-								<span></span>
-								<span></span>
-								<span></span>
-						</button>
+			<nav class="header__nav nav" id="js-nav">
+				<div class="tomain">
+					<b>＜ メインページへ</b>
 				</div>
-				
-		</header>
+				<div class="nav-items">
+					<ul class="nav__items">
+							{{if eq .Site.BaseURL "https://test-harvestfes76.tomoshibi-tech.com/"}}
+								<li class="nav-items__item"><a href="{{.Site.BaseURL}}"><b>ここはテストサイトです</b></a></li>
+							{{end}}
+							<li class="nav-items__item"><a href="{{.Site.BaseURL}}news"><b>お知らせ</b></a></li>
+							<li class="nav-items__item"><a href="{{.Site.BaseURL}}#fm"><b>フロアマップ</b></a></li>
+							<li class="nav-items__item"><a href="{{.Site.BaseURL}}groups"><b>企画一覧</b></a></li>
+							<li class="nav-items__item"><a href="{{.Site.BaseURL}}stage"><b>ステージ演目</b></a></li>
+							<li class="nav-items__item"><a href="{{.Site.BaseURL}}message"><b>収穫祭に寄せて</b></a></li>
+						</ul>
+						<div class="copyright">
+							<!-- <b>お問い合わせ: &nbsp;harvestfes.76@gmail.com</b> <br><br> -->
+							<a class="underline" href="https://forms.gle/tAUbZYvHmJhSbQxL8" target="_blank"><b>お問い合わせフォーム</b></a> <br><br>
+							© 2023 収穫祭実行委員会PCパート
+						</div>
+				</div>
+			</nav>
+
+			<button class="header__hamburger hamburger" id="js-hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
 
 	<div class="wrapper">
 
