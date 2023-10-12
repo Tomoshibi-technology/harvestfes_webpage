@@ -24,7 +24,7 @@ jobs:
           hugo-version: '0.101.0'
 
       - name: Build
-        run: hugo -b='https://test-harvestfes76.tomoshibi-tech.com/'
+        run: hugo -b='https://test-harvestfes76.tomoshibi-tech.com/' --minify
 
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
