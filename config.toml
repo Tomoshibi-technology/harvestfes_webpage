@@ -8,3 +8,24 @@ summaryLength = 50
 # robots.txtつくります
 enableRobotsTXT = true
 
+
+# manifest出力(スマホとかでショートカット追加したときよう)
+[mediaTypes]
+	[outputFormats]
+		[outputFormats.manifest]
+			name = "manifest"
+			baseName = "manifest"
+			mediaType = "application/json"
+			path = "favicons/"
+			notAlternative = "true"
+			permalinkable = "true"
+		[outputFormats.browserconfig]
+			name = "browserconfig"
+			baseName = "browserconfig"
+			mediaType = "application/xml"
+			path = "/"
+			notAlternative = "true"
+			permalinkable = "true"
+	[outputs]
+		home = ["HTML","MANIFEST","browserconfig"]
+		# home = ["HTML","MANIFEST","SITEMAP"]
