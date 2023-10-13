@@ -23,11 +23,12 @@
     background-color: rgba(245, 245, 245, 0.93);          /* 背景色：白色 */
     font-weight: bold;                /* 太字 */
     position: relative;               /* JavaScriptでz-indexを調整するために必要 */
-    width: 40%;
 }
 
+
+
 #tabcontrol .small{
-    font-size: 14px;
+    font-size: min(85%, 14px);
 }
 
 #tabbody .each_tab{
@@ -39,6 +40,7 @@
     z-index: 0;  /* 重なり順序を「最も背面」にするため */
 }
 
-#tabcontrol a:nth-child(1), #tabbody .each_tab:nth-child(1) { background-color: rgba(245, 245, 235, 0.93); }/* 1つ目のタブとその中身用の配色 */
-#tabcontrol a:nth-child(2), #tabbody .each_tab:nth-child(2) { background-color: rgba(245, 235, 245, 0.93); }/* 2つ目のタブとその中身用の配色 */
-#tabcontrol a:nth-child(3), #tabbody .each_tab:nth-child(3) { background-color: rgba(235, 245, 245, 0.93); }/* 3つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(1), #tabbody .each_tab:nth-child(1) { background-color: rgba(245, 245, 225, 0.93); }/* 1つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(2), #tabbody .each_tab:nth-child(2) { background-color: rgba(245, 225, 245, 0.93); }/* 2つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(3), #tabbody .each_tab:nth-child(3) { background-color: rgba(225, 245, 245, 0.93); }/* 3つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(3), #tabbody .each_tab:nth-child(3) { background-color: rgba(245, 245, 245, 0.93); }/* 3つ目のタブとその中身用の配色 */
