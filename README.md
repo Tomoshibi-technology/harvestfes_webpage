@@ -1,4 +1,4 @@
-# [harvestfes_webpage]((https://harvestfes76.tomoshibi-tech.com/){:target="_blank"})
+# [harvestfes_webpage]((https://harvestfes76.tomoshibi-tech.com/))
 
 ![img](https://github.com/Tomoshibi-technology/harvestfes_webpage/blob/main/readme.png)
 
