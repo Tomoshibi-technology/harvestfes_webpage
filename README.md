@@ -13,8 +13,7 @@ GitHubにPushすると、GitHubActionによって、Hugoでビルドされ、FTP
 ## branch
 Pushするブランチが、mainの場合は本番用サイト、develop*、write*の場合はテストサイトにアップロードされます。developブランチは新機能の実装、writeブランチは記事を追加する際に使ってください。
 
-本番サイト : 
-<a href="https://harvestfes76.tomoshibi-tech.com/" target="_blank">https://harvestfes76.tomoshibi-tech.com/</a>
+本番サイト : https://harvestfes76.tomoshibi-tech.com/
 
 テストサイト : https://test-harvestfes76.tomoshibi-tech.com/
 
