@@ -1,6 +1,6 @@
 # harvestfes_webpage
 
-![img](https://github.com/Tomoshibi-technology/harvestfes_webpage/blob/develop-readme/readme.png)
+![img](https://github.com/Tomoshibi-technology/harvestfes_webpage/blob/main/readme.png)
 
 ## Overview
 
