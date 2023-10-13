@@ -28,7 +28,7 @@
 
 
 #tabcontrol .small{
-    font-size: min(85%, 14px);
+    font-size: min(3vw, 16px);
 }
 
 #tabbody .each_tab{
