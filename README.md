@@ -10,7 +10,7 @@
 Hugoを使って、テーマを0から自作しました。
 GitHubにPushすると、GitHubActionによって、Hugoでビルドされ、FTPでサーバーに送られます。
 
-## プッシュするブランチで、URL変わるよ
+## branch
 Pushするブランチが、mainの場合は本番用サイト、develop*、write*の場合はテストサイトにアップロードされます。developブランチは新機能の実装、writeブランチは記事を追加する際に使ってください。
 
 本番サイト : https://harvestfes76.tomoshibi-tech.com/
