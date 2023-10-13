@@ -43,4 +43,4 @@
 #tabcontrol a:nth-child(1), #tabbody .each_tab:nth-child(1) { background-color: rgba(245, 245, 225, 0.93); }/* 1つ目のタブとその中身用の配色 */
 #tabcontrol a:nth-child(2), #tabbody .each_tab:nth-child(2) { background-color: rgba(245, 225, 245, 0.93); }/* 2つ目のタブとその中身用の配色 */
 #tabcontrol a:nth-child(3), #tabbody .each_tab:nth-child(3) { background-color: rgba(225, 245, 245, 0.93); }/* 3つ目のタブとその中身用の配色 */
-#tabcontrol a:nth-child(3), #tabbody .each_tab:nth-child(3) { background-color: rgba(245, 245, 245, 0.93); }/* 3つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(4), #tabbody .each_tab:nth-child(4) { background-color: rgba(245, 245, 245, 0.93); }/* 3つ目のタブとその中身用の配色 */
