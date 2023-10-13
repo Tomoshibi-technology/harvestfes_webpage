@@ -44,17 +44,17 @@
 
 .sns_link .basicsize{
     /* position: fixed; */
-    width: 60px;
+    width: 50px;
 }
 
 .sns_link .bigsize{
     /* position: fixed; */
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 .sns_link a{
-    padding: 0 5%;
+    padding: 0 10%;
 }
 
 body .footer_name{
