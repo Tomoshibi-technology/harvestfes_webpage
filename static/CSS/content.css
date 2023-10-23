@@ -125,3 +125,10 @@
     background-color: inherit;
     text-align: left;
 }
+
+.content .floor_map p{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 24px;
+}
+

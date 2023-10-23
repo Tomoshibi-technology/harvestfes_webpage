@@ -1,0 +1,13 @@
+{{ if .IsNamedParams }}
+<b>{{ if .Get "link"}} 
+    <a class="underline" href="{{.Site.BaseURL}}{{ .Get "link"}}">
+        {{ if .Get "text"}} 
+            {{.Get "text"}}
+        {{end}}
+    </a> 
+    {{ else }}
+    {{ end }}
+</b>
+{{ else }}
+<b>{{ .Get 0 }}</b>
+{{ end }}
