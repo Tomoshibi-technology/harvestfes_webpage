@@ -1,6 +1,6 @@
 {{ if .IsNamedParams }}
 <b>{{ if .Get "link"}} 
-    <a class="underline" href="{{ .Get "link"}}">
+    <a class="underline" href="{{.Site.BaseURL}}{{ .Get "link"}}">
         {{ if .Get "text"}} 
             {{.Get "text"}}
         {{end}}
