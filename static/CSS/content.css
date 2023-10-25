@@ -132,3 +132,8 @@
     margin-bottom: 24px;
 }
 
+.floor_map p img{
+    width: 100%;
+    max-width: 500px;
+}
+
