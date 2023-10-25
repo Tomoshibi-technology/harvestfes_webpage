@@ -28,15 +28,15 @@
         <ul class="news_ul">
             <span class="att">
                 <span class="att_words">
-                    <b>このホームページについて</b><br>
-                    ・内容は順次追記していきます。<br>
-                    ・企画一覧、ステージ演目は10/24以降に掲載します。<br>
-                    ・開催情報、フロアマップはスクロールして頂くことでご覧いただけます。<br>
+                    <!-- <b>このホームページについて</b><br> -->
+                    ・<b>後夜祭の予約についての詳細を掲載いたしました。「お知らせ」をご確認ください。</b> <br>
+                    ・開催情報はスクロールして頂くことでご覧いただけます。<br>
+                    ・ステージ演目は10/25以降に掲載いたします。<br>
                     ・ご質問がございましたら<b><a class="underline" href="https://forms.gle/tAUbZYvHmJhSbQxL8" target="_blank">お問い合わせフォーム</a></b>までご連絡ください。
 
                 </span>
             </span>
-            {{$num:= 4}}
+            {{$num:= 3}}
             <b>
             {{ range first $num .Site.Pages.ByLastmod.Reverse}}
                 {{$f:= path.Dir .File.Dir}}
@@ -72,21 +72,20 @@
             - 状況により変更となる可能性がございます。変更があり次第「お知らせ」及び各種SNSに掲載します。<br>
             <br>
             <b>後夜祭入場には事前予約が必要です</b><br>
-            - 後夜祭は29日(日)に実施。後夜祭の入場には事前予約が必要となります。<br>
-            - 事前予約はまだ受付を開始しておりません。詳細は後日ホームページに記載します。<br>
+            - 後夜祭は29日(日)に開催いたします。後夜祭の入場には事前予約が必要となります。<br>
+            - 事前予約は10/27より受付を開始いたします。Googleフォームを使用しての予約となります。詳細は「お知らせ」をご確認ください。<br>
             <br>
-            <b>食事について</b><br>
-            - 食堂が11:00-14:00の間営業いたします。<br>
-            - 指定団体によるドリンク等販売もホームルーム棟にてございます。<br>
+            <b>飲食について</b><br>
+            - 食堂が11:00-14:00の間営業いたします。（体育館B1F）<br>
+            - 指定団体によるドリンク・菓子類販売もございます。（ホームルーム棟2F）<br>
             - 食堂は上記時間帯以外は休憩所として開放されます。<br>
             - 注意: 食堂の志木校生のみでの利用は認められません。<br>
-            <br>
         </p>
     </div>
     <div id="fm" class="floor_map">
         <h4>フロアマップ</h4>
         
-        <b><a class="underline" href="{{.Site.BaseURL}}img/harvestfes76_floormap_forweb.pdf" target="_blank">PDFで拡大して見る</a></b>
+        <b><a class="underline" href="{{.Site.BaseURL}}img/harvestfes76_floormap_forweb.pdf" target="_blank">PDFで拡大して見る（推奨）</a></b>
         <br><br>
         <p>
             全体図 &nbsp;

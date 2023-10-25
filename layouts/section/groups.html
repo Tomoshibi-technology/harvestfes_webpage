@@ -4,6 +4,25 @@
         <h4>企画一覧　準備中</h4>
     </div>
     <div class="tabs">
+        <style>
+            #tabbody .each_tab p{
+                display: block;
+                line-height: 1.5em;
+            }
+            #tabbody .each_tab p .title{
+                font-size: 20px;
+            }
+
+            #tabbody .each_tab .eimg{
+                /* width: 30px; */
+                display: block;
+            }
+
+            #tabbody .each_tab .eimg img{
+                width: 100%;
+                max-width: 500px;
+            }
+        </style>
         <p id="tabcontrol" class="groups_tab">
             <a href="#tabpage1" class="small">クラス展示</a>
             <a href="#tabpage2" class="small">有志展示</a>
@@ -11,10 +30,239 @@
             <a href="#tabpage4" class="small">教職員展示</a>
         </p>
         <div id="tabbody">
-            <div id="tabpage1" class="each_tab">準備中</div>
-            <div id="tabpage2" class="each_tab">準備中</div>
-            <div id="tabpage3" class="each_tab">準備中</div>
-            <div id="tabpage4" class="each_tab">準備中</div>
+            <div id="tabpage1" class="each_tab">
+                <p>
+                    <!-- 1年生のクラス -->
+                    <span class="title">1年A組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/1A.png" alt=""></span>
+                    <span>エナジードリンクが散乱した部屋の中で謎解き！あなたの頭脳とエナジーが試される！！</span>
+                    <br><br>
+
+                    <span class="title">1年B組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/1B.png" alt=""></span>
+                    <span>カジノをやってます！景品あります！
+                    ポーカー、ブラックジャックなど、さまざまなゲームをやっています！
+                    ルールを知らなくても全然大丈夫です！
+                    ぜひ1-Bへお越しください！</span>
+                    <br><br>
+
+                    <span class="title">1年C組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/1C.png" alt=""></span>
+                    <span>1年C組での射的、キッキングスナイパー、ストラックアウトができる！
+                    ハイスコアを狙ってどんどん挑戦しよう！
+                    みんな大好き「アレ」もあるよ！</span>
+                    <br><br>
+
+                    <span class="title">1年D組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/1D.png" alt=""></span>
+                    <span>監獄のメインテーマの「数学」
+                    1-D内の4つの謎を解き明かし、監獄からの脱出を目指せ！
+                    ※「数学」以外の問題もたくさん用意しているので、ぜひ来てください！</span>
+                    <br><br>
+
+                    <span class="title">1年E組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/1E.png" alt=""></span>
+                    <span>最悪な立地である私達E組ですが、色んな年代の方にも楽しめるようになっています。
+                    1E総出で最高の出し物にしているので、階段を恐れず、ぜひお越しになってください！</span>
+                    <br><br>
+
+                    <span class="title">1年F組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/1F.png" alt=""></span>
+                    <span>新感覚！あまり暗くないお化け屋敷！暗くない中でも、
+                    驚いてもらえるように、努力しました。
+                    色んな、お化け？があなたを待ってます！</span>
+                    <br><br>
+
+                    <!-- 2年生のクラス -->
+                    <span class="title">2年A組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/2A.png" alt=""></span>
+                    <span>1分間に12問！？2年A組でのクイズをやります。
+                    難易度の3段階、そして対戦形式で問題を繰り広げます！
+                    頭をフル活用しに是非寄ってください！お待ちしております！（景品もあるかも？）</span>
+                    <br><br>
+
+                    <span class="title">2年B組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/2B.png" alt=""></span>
+                    <span>The winner is justice. The die is cast .</span>
+                    <br><br>
+
+                    <span class="title">2年C組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/2C.png" alt=""></span>
+                    <span>誰でもチャレンジできるギネス記録に挑戦してみませんか！
+                    参加賞もあるのでぜひ寄ってみてください！</span>
+                    <br><br>
+
+                    <span class="title">2年D組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/2D.png" alt=""></span>
+                    <span>ポーカー、ブラックジャック、ルーレットで遊べます！
+                    とっても楽しいのでぜひ来てください！</span>
+                    <br><br>
+
+                    <span class="title">2年E組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/2E.png" alt=""></span>
+                    <span>どこかで見たような懐かしいゲーム、コロコロバイキングとバンクボウリングが
+                    2Eにて開催！投げて転がして、トップと景品を掴みとれ！立地が悪くても行くしかない！</span>
+                    <br><br>
+
+                    <span class="title">2年F組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/2F.png" alt=""></span>
+                    <span>目隠しをした状態でちょっとしたチャンバラをしていただきます。
+                    普段おとなしい志木高生が必死になって棒を振り回すその姿の哀れ。
+                    慰めに一発叩いてやってください。景品もありますのでぜひいらしてください！</span>
+                    <br><br>
+
+                    <span class="title">2年G組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/2G.png" alt=""></span>
+                    <span>シャッフルボタンやタイマンの特殊なルールで行われるババ抜き最弱王決定戦！</span>
+                    <br><br>
+
+                    <span class="title">2年H組</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/2H.png" alt=""></span>
+                    <span>2年H組で、一般的なカジノのゲームの他にも
+                    あのアニメで観たゲームを再現して楽しめるようになってます！
+                    新しい感覚のカジノを是非体験しに来てください！</span>
+                    <br><br>
+
+
+                </p>
+            </div>
+            <div id="tabpage2" class="each_tab">
+                <p>
+                    <!-- 3年生の団体 -->
+                    <span class="title">有志展示 占いの森</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/3年有志 占いの森.png" alt="3年有志展示占い"></span>
+                    <span>ハロウィンの季節が訪れた志木の森で、占い師たちがあなたの未来を占います。
+                    この占いを受ければ明日からの人生が楽しくなること間違いなし！
+                    占っていくしかなくない？</span>
+                    <br><br>
+
+                    <span class="title">有志展示 K-POP研究会</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/KーPOP研究会.png" alt="K-POP研究会"></span>
+                    <span>「ONCE,ARMY,BLINK,CARAT,ENGENE,
+                        MOA,STAY,Bunnies,
+                        MY,DIVE・・・」全てのK-POPファン集まれ！
+                    グッズ展示やゲームを開催。豪華景品と共にお待ちしてます！</span>
+                    <br><br>
+
+                    <span class="title">サッカー部 ボードゲーム</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/サッカー部.png" alt="サッカー部ボードゲーム"></span>
+                    <span>サッカー部のみんなと楽しくボードゲームできます！
+                    色々なボードゲームがあるので好きなやつを選ぼう！キックターゲットもあるよ</span>
+                    <br><br>
+
+                    <span class="title">燈-TomoshibiTechnology-</span><br>
+                    <!-- <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/電工研.png" alt="電工研究会燈"></span> -->
+                    <span>燈-TomoshibiTechnology-による光と音のパフォーマンスです。
+                    LED、スピーカー、プロジェクターを駆使し、空間を彩ります。</span>
+                    <br><br>
+
+                    <span class="title">クイズ研究会 収穫王</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/クイ研.png" alt="クイズ研究会収穫王"></span>
+                    <span>埼玉某所に位置する慶應志木高校。
+                    この度、｢収穫王｣を決めるクイズ大会の幕が上がるーー
+                    参加は自由！己の知識の限界に挑め！｢収穫王｣の栄誉を獲得せよ！</span>
+                    <br><br>
+
+                    <span class="title">鉄道研究会 鉄道模型展示</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/鉄道研究会.png" alt="鉄道研究会鉄道模型展示"></span>
+                    <span>自由が丘、秋津や分倍河原などの駅を組み込んだ巨大Nゲージレイアウトに
+                    たくさんの列車が走行。ご来場した方には模型になった身近なアレをプレゼント！
+                    （数に限りがありますので、在庫がなくなり次第終了となります。）</span>
+                    <br><br>
+
+                    <span class="title">将棋部 将棋対局</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/将棋部.png" alt="将棋部将棋対局"></span>
+                    <span>部員募集中！途中入部OK！少しでも興味がある人はぜひ来てください！</span>
+                    <br><br>
+
+                    <span class="title">新聞部 新聞展示</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/新聞部.png" alt="新聞展示"></span>
+                    <span>知的好奇心を満たせます。
+                    批評、コラム、エッセイ、創作などを幅広く展示。
+                    紙新聞も大量印刷。帰りの電車で読めるから、とりあえず持ってけ〜</span>
+                    <br><br>
+
+                    <span class="title">数学研究会 展示</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/数研.png" alt="数学研究会展示"></span>
+                    <span>数学とかの色々を展示します。興味がある人はぜひ来てください！</span>
+                    <br><br>
+
+                    <span class="title">スキー部 銀世界写真館</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/スキー部.png" alt="スキー部銀世界写真館"></span>
+                    <span>スキー部の合宿で撮れた雪景色を展示してます。とくとご覧あれ！PVも流してます。</span>
+                    <br><br>
+
+                    <span class="title">美術部 おえかきだいすきくらぶ</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/美術部.png" alt="美術部おえかきだいすきくらぶ"></span>
+                    <span>部活で描いた作品の展示を行います。最近部員が増えたことにより、2名の作品が飾られます。</span>
+                    <br><br>
+
+                    <span class="title">器楽部 器楽部特別コンサート</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/器楽部.png" alt="器楽部特別コンサート"></span>
+                    <span>男子校の吹奏楽部に女子高生が乱入？ま、まさかそんなわけ、、、
+                    それに演奏曲は推しの子の主題歌「アイドル」
+                    ジョジョの奇妙な冒険第5部「処刑用BGM」！？
+                    そんなもん聞きに行くしかないだろぉぉ</span>
+                    <br><br>
+
+                    <span class="title">秋の志木ワグ合唱祭</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/ワグネル.png" alt="秋の志木ワグ合唱祭"></span>
+                    <span>100年以上の歴史を持つ慶應義塾ワグネル・ソサィエティー男声合唱団の派生団体です。
+                    本格派の男声合唱で人気のポップス曲や慶應のカレッジソングを歌い上げます。
+                    おなじみの曲を一味違った響きで楽しんでみませんか？</span>
+                    <br><br>
+
+                    <span class="title">生徒会 こもれびラウンジ</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/生徒会.png" alt="こもれびラウンジ"></span>
+                    <span>志木高産の木や竹を使った寛ぎの空間で「こもれび座談会」を行います！
+                    さらに、生徒会本部の校内ツアーやスタンプラリーもご用意しております！
+                    ぜひお越しください！</span>
+                    <br><br>
+
+                    <span class="title">生物部 海なし県に水族館？？</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/生物部.png" alt="生物部"></span>
+                    <span>水族館、〇〇をやめた植物達、ザリガニ釣り、活動報告、志木高図鑑、虫食レポ、
+                    激辛トウガラシ、洞窟魚、校内のタヌキ、
+                    トンボ、魚班の採集道具、奄美大島遠征などなど。
+                    生物部員と触れ合い体験も！？</span>
+                    <br><br>
+
+                    <span class="title">天文部 モデルロケット発射</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/展示イメージ画/天文部.png" alt="天文部"></span>
+                    <span>サッカー場で小さなロケットを発射します。
+                    意外と派手ですぐ終わるので、見てみてください！</span>
+                    <br><br>
+                </p>
+            </div>
+            <div id="tabpage3" class="each_tab">準備中<br>ホームルーム棟2F、E/I教室にてドリンク・菓子類を販売いたします。</div>
+            <div id="tabpage4" class="each_tab">
+                <p>
+                    <span class="title">選択社会C 私のイチオシ法律</span>
+                    <span class="eimg"></span>
+                    <span>私たちは法学入門と題し、法律の勉強をしていますが、始めて半年、各自のイチオシ法律について語ります。お楽しみにお越しください。</span>
+                    <br><br>
+
+                    <span class="title">選択社会B 時代を批評する</span>
+                    <span class="eimg"></span>
+                    <span>現代文明批評の名著であるオルテガ『大衆の反逆』を活用し、履修者が現代の世界ニュースについて批評的に考察したポスター展示発表です。</span>
+                    <br><br>
+
+                    <span class="title">台湾交流 曲当てクイズ・カラオケ</span>
+                    <span class="eimg"></span>
+                    <span>私たち台湾交流は、今年の交流会でも行った日本語、中国語、英語でのカラオケや歌詞当てクイズを行います。台湾交流に興味がある方、カラオケをしたい方はぜひ参加してください！</span>
+                    <br><br>
+
+                    <span class="title">必修美術3年 wall and piece</span>
+                    <span class="eimg"></span>
+                    <span>3年生が授業で製作した「風刺」をテーマにした絵画の展示です。1・2年生とは一味違う洗練された作品をお楽しみください。</span>
+                    <br><br>
+
+                    <span class="title">ドイツ語 第9番合唱performance</span>
+                    <span class="eimg"></span>
+                    <span>コロナの時期を乗り越え、今回は復活第二弾！収穫祭の恒例となりつつある合唱パフォーマンスを楽しんでください。</span>
+
+                </p>
+            </div>
         </div>
     </div>
 </main>

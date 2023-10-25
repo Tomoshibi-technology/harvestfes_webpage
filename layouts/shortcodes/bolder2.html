@@ -1,0 +1,5 @@
+{{ if .IsNamedParams }}
+<b>{{ if .Get "text"}}{{ .Get "text" }}{{ else }}{{ end }}</b>
+{{ else }}
+<b>{{ .Get 0 }}</b>
+{{ end }}
