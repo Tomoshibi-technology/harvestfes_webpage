@@ -7,5 +7,5 @@ file: "other"
 slug: "/other5"
 description: ""
 ---
+第76回収穫祭実行委員会
 {{<inimg img="mem.JPG">}}
-準備中
