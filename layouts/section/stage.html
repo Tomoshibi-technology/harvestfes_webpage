@@ -1,18 +1,82 @@
 {{ partial "header.html" . }}
 <main>
     <div class="content_sub">
-        <h4>ステージ演目　準備中</h4>
+        <h4>ステージ演目</h4>
     </div>
+    <style>
+        #tabbody .each_tab p{
+            display: block;
+            line-height: 1.5em;
+        }
+        #tabbody .each_tab p .title{
+            font-size: 20px;
+        }
+        #tabbody .each_tab p .title2{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        #tabbody .each_tab .eimg{
+            /* width: 30px; */
+            display: block;
+        }
+
+        #tabbody .each_tab .eimg img{
+            width: 100%;
+            max-width: 500px;
+        }
+        html body .underline{
+            text-decoration: underline;
+            color: rgb(61, 11, 186);
+            font-size: 16px;
+        }
+    </style>
     <div class="tabs">
         <p id="tabcontrol">
-            <a href="#tabpage1">中夜祭<br><span class="small">@中夜ステージ</span></a>
-            <a href="#tabpage2">後夜祭<br><span class="small">@体育館</span></a>
-            <a href="#tabpage3">招待試合<br><span class="small">@体育館</span></a>
+            <a href="#tabpage1" class="small"> 後夜祭</a>
+            <a href="#tabpage2" class="small">中夜祭</a>
+            <a href="#tabpage3" class="small"> 有志発表</a>
+            <a href="#tabpage4" class="small"> 招待試合</a>
         </p>
         <div id="tabbody">
-            <div id="tabpage1" class="each_tab">準備中</div>
-            <div id="tabpage2" class="each_tab">準備中</div>
+            
+            <div id="tabpage1" class="each_tab">
+                <p>
+                    <span class="title2">後夜祭</span><br>
+                    体育館にて29日16時より開催！<br><br>
+                    <b><a class="underline" href="{{.Site.BaseURL}}#fm">フロアマップで位置を確認する</a></b><br><br>
+                    <span>ミスターコン、ミスコン、恋愛リアリティーショーや3年軽音バンドによる発表など見どころ満載！</span>
+                    <br><br>
+                    <span class="title">出演バンド</span><br>
+                    CALAMITIES <br>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/band_ca.jpg" alt=""></span><br>
+                    The body <br>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/band_the.jpg" alt=""></span><br>
+                    Moratorium <br>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/band_ja.jpg" alt=""></span>
+                </p>
+            </div>
+            <div id="tabpage2" class="each_tab">
+                <p>
+                    <span class="title2">中夜祭</span><br>
+                    中夜祭ステージにて両日ともに開催！<br><br>
+                    <b><a class="underline" href="{{.Site.BaseURL}}#fm">フロアマップで位置を確認する</a></b><br><br>
+                    <span class="title">28日土曜日のスケジュール</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/tyuuya28_1.png" alt=""></span>
+                    <span></span>
+                    <br><br>
+                    <span class="title">29日日曜日のスケジュール</span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/tyuuya29.png" alt=""></span>
+                    <span></span>
+                    <br><br>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/tt1.jpg" alt=""></span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/tt2.jpg" alt=""></span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/tt3.jpg" alt=""></span>
+                    <span class="eimg"><img src="{{.Site.BaseURL}}img/tt4.jpg" alt=""></span>
+                </p>
+            </div>
             <div id="tabpage3" class="each_tab">準備中</div>
+            <div id="tabpage4" class="each_tab">準備中</div>
         </div>
     </div>
 </main>
