@@ -1,0 +1,19 @@
+{{ if .IsNamedParams }}
+{{ if .Get "img"}} 
+    <style>
+        .eimg{
+            width: 100%;
+            display: block;
+        }
+
+    .eimg img{
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
+    <span class="eimg"><img src="{{.Site.BaseURL}}img/{{ .Get "img"}}"></span>
+    {{ else }}
+    {{ end }}
+{{ else }}
+{{ .Get 0 }}
+{{ end }}
