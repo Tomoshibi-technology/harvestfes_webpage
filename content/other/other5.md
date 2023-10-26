@@ -1,0 +1,11 @@
+---
+title: "実行委員紹介"
+# meta_title: "検索で表示されるタイトル(metaタグ)を入れる"
+date: "2023-10-26"
+draft: false
+file: "other"
+slug: "/other5"
+description: ""
+---
+{{<inimg img="mem.JPG">}}
+準備中
