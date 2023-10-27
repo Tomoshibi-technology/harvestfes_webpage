@@ -7,4 +7,5 @@ file: "other"
 slug: "/other4"
 description: ""
 ---
-準備中
+受付上にございますモザイクアートは全校生徒で製作したものです。
+{{<inimg img="mosaic.jpg">}}
